@@ -37,7 +37,7 @@ Open the root `index.html` in a browser and choose either project. No build step
 ## Travel agency features
 - Responsive Bootstrap navbar with Home, Destinations, Tours and Contact links
 - Scenic hero with headline, supporting copy and calls to action
-- Three destination cards with images and enquiry links
+- Three native Bootstrap destination cards with images and Learn More buttons
 - Bootstrap accordion with three sample tour packages
 - Contact form with Bootstrap validation feedback and destination prefill
 - Responsive footer with social links

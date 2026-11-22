@@ -10,7 +10,7 @@ Open `index.html` in a browser. The page uses Bootstrap, Bootstrap Icons, Google
 
 - Responsive, collapsible navbar
 - Bootstrap grid (`container`, `row`, responsive `col-*` classes)
-- Destination cards composed with Bootstrap grid and custom card styling
+- Native Bootstrap `.card` components inside a responsive Bootstrap grid
 - Accordion tour packages
 - Form controls, select, validation feedback and alert
 - Responsive utility classes and Bootstrap Icons
