@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Golden Palette — an exquisite bistro and lounge experience.">
+  <title>The Golden Palette | Bistro & Lounge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="#home">
+        <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
+        <span>The Golden <em>Palette</em><small>BISTRO &amp; LOUNGE</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-gold btn-sm px-4" href="#contact">Reserve a Table</a></li>
+          <li class="nav-item">
+            <button class="theme-toggle-btn nav-theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-section" id="home">
+      <div class="hero-shade"></div>
+      <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-8 col-xl-7 text-center text-lg-start">
+            <p class="eyebrow text-gold">A TASTE WORTH REMEMBERING</p>
+            <h1>Where every plate<br><em>tells a story.</em></h1>
+            <p class="hero-copy">Thoughtfully prepared dishes, exceptional ingredients and warm hospitality — all served with a little golden touch.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mt-4">
+              <a class="btn btn-gold btn-lg" href="#menu">Explore Our Menu <i class="bi bi-arrow-right ms-2"></i></a>
+              <a class="btn btn-outline-light btn-lg" href="#about">Discover Our Story</a>
+            </div>
+            <div class="hero-note mt-5"><span></span> GOOD FOOD. GOOD COMPANY. GREAT MEMORIES.</div>
+          </div>
+        </div>
+      </div>
+      <a href="#menu" class="scroll-cue" aria-label="Scroll to menu"><i class="bi bi-arrow-down"></i></a>
+    </section>
+
+    <!-- Intro strip -->
+    <section class="intro-strip py-4">
+      <div class="container">
+        <div class="row text-center g-3">
+          <div class="col-12 col-md-4"><i class="bi bi-stars"></i><span>Fresh, quality ingredients</span></div>
+          <div class="col-12 col-md-4"><i class="bi bi-heart"></i><span>Made with passion</span></div>
+          <div class="col-12 col-md-4"><i class="bi bi-cup-hot"></i><span>An experience to savour</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section-pad" id="menu">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">FROM OUR KITCHEN</p>
+          <h2>A menu made to <em>delight.</em></h2>
+          <p>Explore a few of our kitchen favourites, prepared with care and served fresh.</p>
+        </div>
+
+        <div class="menu-category">
+          <div class="category-heading"><span>01</span><h3>Appetizers</h3><div></div></div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$9" data-ingredients="Artisan unbleached flour, crushed garlic, organic butter, aged Parmigiano-Reggiano, fresh Italian flat-leaf parsley, sea salt." data-allergens="Wheat (Gluten), Milk (Dairy)">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=800" alt="Garlic Parmesan Knots" class="menu-img" loading="lazy"><span class="price-tag">$9</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Garlic Parmesan Knots</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Freshly baked dough brushed with savoury garlic butter, aged parmesan and parsley.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$12" data-ingredients="Wild-caught Atlantic squid, buttermilk batter, seasoned cornstarch, house marinara, fresh lemons." data-allergens="Mollusks (Calamari), Wheat (Gluten), Milk">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800" alt="Crispy Calamari" class="menu-img" loading="lazy"><span class="price-tag">$12</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Crispy Calamari</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Lightly battered squid rings with sea salt and our bold house marinara.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$11" data-ingredients="White button mushroom caps, sweet Italian pork sausage, Neufchâtel cream cheese, fresh rosemary, thyme, panko breadcrumbs." data-allergens="Wheat (Gluten), Milk (Dairy)">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800" alt="Stuffed Mushrooms" class="menu-img" loading="lazy"><span class="price-tag">$11</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Stuffed Mushrooms</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Mushroom caps filled with wild herbs, cream cheese and Italian sausage.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <div class="category-heading"><span>02</span><h3>Main Courses</h3><div></div></div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$24" data-ingredients="Sustainably-farmed Atlantic Salmon, Arborio rice, wild porcini mushrooms, vegetable stock, white wine, organic green asparagus." data-allergens="Fish, Milk (Dairy), Sulphites">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800" alt="Pan-Seared Salmon" class="menu-img" loading="lazy"><span class="price-tag">$24</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Pan-Seared Salmon</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Crisp salmon with wild mushroom risotto and charred green asparagus.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$29" data-ingredients="28-day dry-aged USDA Prime Ribeye, compound butter (roasted garlic, chives), Idaho potatoes, white truffle oil, sea salt flakes." data-allergens="Milk (Dairy)">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="Classic Ribeye Steak" class="menu-img" loading="lazy"><span class="price-tag">$29</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Classic Ribeye Steak</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">A beautifully marbled cut, flame-grilled and served with truffle fries.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$21" data-ingredients="Free-range chicken breast, enriched durum wheat fettuccine, sun-dried Mediterranean tomatoes, organic baby spinach, heavy cream, garlic." data-allergens="Wheat (Gluten), Milk (Dairy)">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=800" alt="Tuscan Chicken Pasta" class="menu-img" loading="lazy"><span class="price-tag">$21</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Tuscan Chicken Pasta</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Tender chicken and fettuccine in a sun-dried tomato and spinach cream sauce.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <div class="category-heading"><span>03</span><h3>Desserts</h3><div></div></div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$10" data-ingredients="Belgian dark chocolate (70% cocoa), organic eggs, sugar, Madagascar vanilla bean paste, whole milk ice cream." data-allergens="Eggs, Milk (Dairy), Wheat">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800" alt="Decadent Lava Cake" class="menu-img" loading="lazy"><span class="price-tag">$10</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Decadent Lava Cake</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Warm dark chocolate cake with a molten centre and vanilla bean ice cream.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$9" data-ingredients="Cream cheese, sour cream, graham cracker crumbs, sugar, fresh farm strawberries, fresh garden mint." data-allergens="Milk (Dairy), Wheat (Gluten)">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800" alt="New York Cheesecake" class="menu-img" loading="lazy"><span class="price-tag">$9</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">New York Cheesecake</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Silky artisan cheesecake on a buttery graham base with strawberry reduction.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="menu-card h-100" tabindex="0" role="button" onclick="openModal(this)" onkeydown="activateCard(event, this)" data-price="$9" data-ingredients="Italian ladyfinger biscuits, premium espresso blend, mascarpone cheese, organic egg yolks, dark cocoa." data-allergens="Eggs, Milk (Dairy), Wheat (Gluten)">
+                <div class="menu-image-wrap"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800" alt="Tiramisu" class="menu-img" loading="lazy"><span class="price-tag">$9</span></div>
+                <div class="menu-info"><div class="d-flex justify-content-between align-items-start gap-2"><h4 class="menu-title">Tiramisu</h4><i class="bi bi-plus-circle menu-more"></i></div><p class="menu-desc">Espresso-soaked ladyfingers layered with whipped mascarpone and cocoa.</p><span class="menu-hint">View ingredients &amp; allergens</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <p class="menu-disclaimer text-center mt-5">Please inform our team of any allergies or dietary requirements before ordering.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section section-pad" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image-wrap">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200" alt="Elegant restaurant dining table" loading="lazy">
+              <div class="about-stamp"><strong>THE ART</strong><span>OF DINING</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p class="eyebrow">OUR STORY</p>
+            <h2>More than a meal.<br><em>A moment to remember.</em></h2>
+            <p class="about-copy">At The Golden Palette, we believe a memorable meal is about more than what is on the plate. It is the aroma from the kitchen, the pleasure of good company and the care behind every detail.</p>
+            <p class="about-copy">Our kitchen brings together thoughtfully selected ingredients and a love for generous, flavourful cooking. Whether you are joining us for a relaxed lunch or a special evening, we want every visit to feel worth celebrating.</p>
+            <a href="#contact" class="text-link">Come dine with us <i class="bi bi-arrow-up-right"></i></a>
+            <div class="about-stats row g-3 mt-4">
+              <div class="col-4"><strong>Fresh</strong><span>Ingredients</span></div>
+              <div class="col-4"><strong>Made</strong><span>With care</span></div>
+              <div class="col-4"><strong>Always</strong><span>Welcoming</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section section-pad" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>We'd love to<br><em>hear from you.</em></h2>
+            <p class="contact-intro">Planning a visit, celebrating a special occasion or have a question about our menu? Send us a message.</p>
+            <div class="contact-detail"><i class="bi bi-geo-alt"></i><div><strong>Visit us</strong><span>123 Culinary Avenue, Your City</span></div></div>
+            <div class="contact-detail"><i class="bi bi-telephone"></i><div><strong>Call us</strong><span>+1 (555) 123-4567</span></div></div>
+            <div class="contact-detail"><i class="bi bi-envelope"></i><div><strong>Email us</strong><span>hello@goldenpalette.example</span></div></div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6"><label for="name" class="form-label">Your name</label><input type="text" class="form-control" id="name" name="name" placeholder="e.g. Alex Morgan" required></div>
+                <div class="col-md-6"><label for="email" class="form-label">Email address</label><input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required></div>
+                <div class="col-12"><label for="subject" class="form-label">Subject</label><input type="text" class="form-control" id="subject" name="subject" placeholder="Reservation, menu enquiry..." required></div>
+                <div class="col-12"><label for="message" class="form-label">Your message</label><textarea class="form-control" id="message" name="message" rows="5" placeholder="How can we help?" required></textarea></div>
+                <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center gap-3"><button type="submit" class="btn btn-gold btn-lg">Send Message <i class="bi bi-send ms-2"></i></button><small class="form-note">We’ll get back to you as soon as we can.</small></div>
+              </div>
+              <div class="alert alert-success mt-3 d-none" id="formFeedback" role="status">Thank you! Your message has been validated. Connect this form to a backend or form service to receive submissions.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6">
+          <a class="footer-brand" href="#home">The Golden <em>Palette</em></a>
+          <p class="footer-tagline">Good food. Good company. Great memories.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="social-links mb-3">
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+          <p class="copyright mb-0">&copy; <span id="year"></span> The Golden Palette. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menu item details modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content menu-modal">
+        <div class="modal-header border-0">
+          <span class="eyebrow mb-0">FROM OUR MENU</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="row g-0">
+          <div class="col-md-5"><img src="" alt="" class="modal-hero-img" id="modalImg"></div>
+          <div class="col-md-7"><div class="modal-body">
+            <div class="d-flex align-items-start justify-content-between gap-3"><h3 class="modal-title" id="modalTitle"></h3><span class="modal-price" id="modalPrice"></span></div>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-meta-section"><h4>Key Ingredients</h4><p id="modalIngredients"></p></div>
+            <div class="modal-meta-section"><h4>Allergen Warnings</h4><p id="modalAllergens"></p></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
