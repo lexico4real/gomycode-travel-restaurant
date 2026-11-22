@@ -1,52 +1,38 @@
-# The Golden Palette | Bistro & Lounge
+# Bootstrap Website Projects
 
-A responsive, single-page restaurant website built with HTML5, CSS3 and Bootstrap 5.
+A project hub containing two independent responsive website exercises built with HTML5, CSS3 and Bootstrap 5.
 
-## Features
+## Projects
+1. **The Golden Palette** — fictional restaurant website demonstrating Bootstrap's responsive grid system.
+2. **Wanderlust Journeys** — travel agency landing page demonstrating Bootstrap components. Its route is scaffolded and ready for the full implementation.
 
-- Responsive Bootstrap 5 navigation bar with same-page section links
-- Full-width restaurant hero section with calls to action
-- Menu grid featuring nine dishes across appetizers, main courses and desserts
-- Interactive Bootstrap modal displaying menu descriptions, ingredients and allergen information
-- About Us section with a responsive two-column layout
-- Contact form with browser-side validation and demo feedback
-- Responsive footer with social media links
-- Light/dark theme toggle with saved preference
-
-## Project structure
-
+## Repository structure
 ```text
-golden-palette/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-│   └── images/
+bootstrap-projects/
+├── index.html                 # Project selector / entry point
+├── css/hub.css                # Project selector styles
+├── restaurant/
+│   ├── index.html
+│   ├── css/style.css
+│   ├── js/script.js
+│   └── assets/images/
+├── travel-agency/
+│   └── index.html             # Travel project entry point
 ├── README.md
 └── .gitignore
 ```
 
-## Getting started
+## Run locally
+Open the root `index.html` in a browser and choose either project. No build step or package installation is required. Internet access is required for CDN assets, Google Fonts and externally hosted Unsplash images.
 
-1. Clone or download this repository.
-2. Open `index.html` in a modern web browser.
-3. An internet connection is required for Bootstrap, Bootstrap Icons, Google Fonts and the externally hosted Unsplash images.
+## Restaurant features
+- Responsive Bootstrap navbar with same-page section links
+- Hero, menu grid with nine dishes, About Us, Contact and footer
+- Bootstrap modal with ingredient and allergen details
+- Light/dark theme toggle and contact form demo validation
 
-No build step or package installation is required.
+## Travel agency status
+The route is scaffolded in `travel-agency/index.html`. The full implementation will include a navbar, scenic hero, destination cards, tour accordion, contact form and footer.
 
-## Important notes
-
-- Menu prices and contact details are sample content for this fictional restaurant.
-- Images are loaded from Unsplash URLs rather than stored locally in `assets/images/`.
-- The contact form currently validates input in the browser and displays a demo confirmation. It does not send or store messages. Connect it to a backend or form service before using it in production.
-- Social media links currently point to the platforms' homepages and should be replaced with the restaurant's actual profiles.
-
-## Technologies
-
-- HTML5
-- CSS3
-- Bootstrap 5.3.3
-- Bootstrap Icons 1.11.3
-- Vanilla JavaScript
+## Notes
+Restaurant prices and contact details are fictional. The restaurant contact form does not send or store submissions. Images are externally hosted.
