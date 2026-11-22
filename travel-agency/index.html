@@ -1,1 +1,131 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wanderlust Journeys | Travel Agency</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"><style>body{min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#102c35,#1f5360);font-family:system-ui,sans-serif;color:#fff;padding:24px}.panel{max-width:620px;text-align:center;padding:48px 34px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px}.icon{font-size:3rem;color:#e8bd72}.eyebrow{letter-spacing:.2em;font-size:.7rem;color:#e8bd72;font-weight:700}h1{font-family:Georgia,serif;font-size:clamp(2.4rem,7vw,4rem);margin:12px 0}p{color:rgba(255,255,255,.75);line-height:1.8}.btn{background:#e8bd72;color:#172d32;border:0;font-weight:700;padding:12px 22px}.btn:hover{background:#f1cf91;color:#172d32}</style></head><body><main class="panel"><i class="bi bi-airplane icon"></i><p class="eyebrow mt-3 mb-1">TRAVEL AGENCY PROJECT</p><h1>Wanderlust Journeys</h1><p>The travel agency website will be built here as the second independent Bootstrap project, featuring destination cards, tour-package accordion panels and a contact form.</p><a class="btn" href="../index.html"><i class="bi bi-arrow-left me-2"></i>Back to project selector</a></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover extraordinary destinations and thoughtfully designed journeys with Wanderlust Journeys.">
+  <meta name="theme-color" content="#102b2b">
+  <title>Wanderlust Journeys | Find Your Somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top travel-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Wanderlust Journeys home">
+        <span class="brand-mark"><i class="bi bi-compass-fill"></i></span>
+        <span>Wanderlust <small>JOURNEYS</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="travelNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-gold nav-cta" href="#contact">Plan my trip <i class="bi bi-arrow-up-right ms-1"></i></a></li>
+          <li class="nav-item ms-lg-2"><a class="hub-return" href="../index.html" aria-label="Back to all projects" title="Back to all projects"><i class="bi bi-grid-1x2"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section">
+    <div class="hero-shade"></div>
+    <div class="container hero-content">
+      <div class="row"><div class="col-lg-8 col-xl-7">
+        <p class="eyebrow hero-eyebrow"><span></span> CURATED JOURNEYS. UNFORGETTABLE STORIES.</p>
+        <h1>Find your<br><em>somewhere.</em></h1>
+        <p class="hero-lead">The world is wide. Your next great story is waiting. Let us take you beyond the ordinary.</p>
+        <div class="d-flex flex-wrap gap-3 align-items-center">
+          <a class="btn btn-gold btn-lg" href="#destinations">Explore destinations <i class="bi bi-arrow-up-right ms-2"></i></a>
+          <a class="hero-play" href="#tours"><span><i class="bi bi-play-fill"></i></span> Discover our journeys</a>
+        </div>
+      </div></div>
+    </div>
+    <div class="hero-bottom container d-none d-md-flex justify-content-between align-items-end">
+      <span><i class="bi bi-geo-alt me-2"></i>MADE FOR THE CURIOUS</span>
+      <span>01 — 04 <i class="bi bi-dash-lg ms-2"></i></span>
+    </div>
+  </header>
+
+  <section class="trust-strip" aria-label="Our travel promise">
+    <div class="container"><div class="row g-3 text-center">
+      <div class="col-6 col-lg-3"><i class="bi bi-globe-americas"></i><span>Handpicked destinations</span></div>
+      <div class="col-6 col-lg-3"><i class="bi bi-person-heart"></i><span>Personal travel planning</span></div>
+      <div class="col-6 col-lg-3"><i class="bi bi-shield-check"></i><span>Travel with confidence</span></div>
+      <div class="col-6 col-lg-3"><i class="bi bi-chat-dots"></i><span>Real human support</span></div>
+    </div></div>
+  </section>
+
+  <main>
+    <section id="destinations" class="section-padding destinations-section">
+      <div class="container">
+        <div class="section-heading row align-items-end gy-3">
+          <div class="col-lg-7"><p class="eyebrow text-green">THE WORLD, WELL EXPLORED</p><h2>Places that stay<br><em>with you.</em></h2></div>
+          <div class="col-lg-5"><p class="section-intro-copy">From ancient streets to wild horizons, discover places chosen for the feeling they leave long after you return.</p></div>
+        </div>
+        <div class="row g-4 destination-grid">
+          <div class="col-md-6 col-lg-4"><article class="destination-card h-100">
+            <div class="destination-image"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85" alt="White buildings overlooking the blue sea in Santorini" loading="lazy"><span class="destination-tag">ISLAND ESCAPE</span><span class="destination-number">01</span></div>
+            <div class="destination-info"><div class="d-flex justify-content-between align-items-center"><span class="destination-country">GREECE</span><span class="trip-length"><i class="bi bi-clock"></i> 7 days</span></div><h3>Santorini, Greece</h3><p>Whitewashed villages, Aegean sunsets and slow afternoons by the sea.</p><a href="#contact" class="text-link" data-destination="Santorini, Greece">Discover this place <i class="bi bi-arrow-up-right"></i></a></div>
+          </article></div>
+          <div class="col-md-6 col-lg-4"><article class="destination-card h-100">
+            <div class="destination-image"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85" alt="Colourful coastal villages of Cinque Terre in Italy" loading="lazy"><span class="destination-tag">CULTURE &amp; COAST</span><span class="destination-number">02</span></div>
+            <div class="destination-info"><div class="d-flex justify-content-between align-items-center"><span class="destination-country">ITALY</span><span class="trip-length"><i class="bi bi-clock"></i> 8 days</span></div><h3>Cinque Terre, Italy</h3><p>Pastel villages, coastal trails and the irresistible taste of la dolce vita.</p><a href="#contact" class="text-link" data-destination="Cinque Terre, Italy">Discover this place <i class="bi bi-arrow-up-right"></i></a></div>
+          </article></div>
+          <div class="col-md-6 col-lg-4"><article class="destination-card h-100">
+            <div class="destination-image"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85" alt="Elephants roaming across an African savannah" loading="lazy"><span class="destination-tag">WILD ADVENTURE</span><span class="destination-number">03</span></div>
+            <div class="destination-info"><div class="d-flex justify-content-between align-items-center"><span class="destination-country">KENYA</span><span class="trip-length"><i class="bi bi-clock"></i> 6 days</span></div><h3>Maasai Mara, Kenya</h3><p>Golden grasslands, extraordinary wildlife and nights under open skies.</p><a href="#contact" class="text-link" data-destination="Maasai Mara, Kenya">Discover this place <i class="bi bi-arrow-up-right"></i></a></div>
+          </article></div>
+        </div>
+        <div class="destination-note mt-4"><span>CAN'T FIND YOUR DREAM DESTINATION?</span><a href="#contact">Tell us where you want to go <i class="bi bi-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <section class="experience-section">
+      <div class="container"><div class="row align-items-center g-5">
+        <div class="col-lg-6"><div class="experience-photo"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85" alt="Peaceful alpine lake surrounded by mountains" loading="lazy"><div class="photo-caption"><i class="bi bi-sunrise"></i><span><strong>More than a holiday</strong><small>A story worth telling</small></span></div></div></div>
+        <div class="col-lg-6 experience-copy"><p class="eyebrow text-gold">TRAVEL, THOUGHTFULLY DESIGNED</p><h2>Not just places.<br><em>Perspectives.</em></h2><p>We believe the best journeys are never one-size-fits-all. We listen to what moves you, then bring together the places, people and little details that make a trip feel entirely yours.</p><div class="experience-points"><div><span>01</span><p><strong>Made around you</strong><small>Your pace, your interests, your kind of adventure.</small></p></div><div><span>02</span><p><strong>Local at heart</strong><small>Meaningful experiences with a sense of place.</small></p></div><div><span>03</span><p><strong>Care at every step</strong><small>Thoughtful support from first idea to homecoming.</small></p></div></div><a href="#contact" class="btn btn-outline-light mt-3">Let's plan something <i class="bi bi-arrow-up-right ms-2"></i></a></div>
+      </div></div>
+    </section>
+
+    <section id="tours" class="section-padding tours-section">
+      <div class="container"><div class="row g-5">
+        <div class="col-lg-5 tours-intro"><p class="eyebrow text-green">A JOURNEY FOR EVERY MOOD</p><h2>Choose your<br><em>next chapter.</em></h2><p>Explore a few ways to see the world. Every itinerary can be tailored to your dates, interests and travel style.</p><a href="#contact" class="text-link">Ask about a custom journey <i class="bi bi-arrow-up-right"></i></a><div class="tour-side-note"><i class="bi bi-map"></i><span>Thoughtfully planned.<br>Beautifully experienced.</span></div></div>
+        <div class="col-lg-7"><div class="accordion tour-accordion" id="tourAccordion">
+          <div class="accordion-item"><h3 class="accordion-header" id="tourOneHeading"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tourOne" aria-expanded="true" aria-controls="tourOne"><span class="tour-index">01</span><span class="tour-title">Mediterranean Dream</span><span class="tour-duration">7–10 DAYS</span></button></h3><div id="tourOne" class="accordion-collapse collapse show" aria-labelledby="tourOneHeading" data-bs-parent="#tourAccordion"><div class="accordion-body"><p>Island-hop through Greece, wander historic lanes and savour long dinners beside the water. A sun-soaked escape made for curious travellers.</p><div class="tour-meta"><span><i class="bi bi-geo-alt"></i> Greece &amp; Italy</span><span><i class="bi bi-stars"></i> Culture · Coast · Cuisine</span></div><a href="#contact" class="text-link tour-detail" data-tour="Mediterranean Dream">View details <i class="bi bi-arrow-up-right"></i></a></div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header" id="tourTwoHeading"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tourTwo" aria-expanded="false" aria-controls="tourTwo"><span class="tour-index">02</span><span class="tour-title">Into the Wild</span><span class="tour-duration">6–8 DAYS</span></button></h3><div id="tourTwo" class="accordion-collapse collapse" aria-labelledby="tourTwoHeading" data-bs-parent="#tourAccordion"><div class="accordion-body"><p>Experience the magic of the African wilderness with guided game drives, remarkable landscapes and stays close to nature.</p><div class="tour-meta"><span><i class="bi bi-geo-alt"></i> Kenya &amp; Tanzania</span><span><i class="bi bi-stars"></i> Safari · Wildlife · Nature</span></div><a href="#contact" class="text-link tour-detail" data-tour="Into the Wild">View details <i class="bi bi-arrow-up-right"></i></a></div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header" id="tourThreeHeading"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tourThree" aria-expanded="false" aria-controls="tourThree"><span class="tour-index">03</span><span class="tour-title">Asia, Beyond the Ordinary</span><span class="tour-duration">9–12 DAYS</span></button></h3><div id="tourThree" class="accordion-collapse collapse" aria-labelledby="tourThreeHeading" data-bs-parent="#tourAccordion"><div class="accordion-body"><p>Find calm in ancient temples, discover vibrant markets and balance city energy with quiet moments in nature.</p><div class="tour-meta"><span><i class="bi bi-geo-alt"></i> Japan &amp; Thailand</span><span><i class="bi bi-stars"></i> Heritage · Food · Discovery</span></div><a href="#contact" class="text-link tour-detail" data-tour="Asia, Beyond the Ordinary">View details <i class="bi bi-arrow-up-right"></i></a></div></div></div>
+        </div></div>
+      </div></div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding">
+      <div class="container"><div class="row g-5 align-items-start">
+        <div class="col-lg-5 contact-copy"><p class="eyebrow text-gold">YOUR NEXT STORY STARTS HERE</p><h2>Let's make<br><em>it happen.</em></h2><p>Have a destination in mind or just a feeling you want to chase? Tell us a little about it. We'll help you shape the journey.</p><div class="contact-detail"><i class="bi bi-envelope"></i><span><small>EMAIL US</small>hello@wanderlustjourneys.example</span></div><div class="contact-detail"><i class="bi bi-chat-dots"></i><span><small>WE'RE HERE TO HELP</small>Monday – Saturday, 9am – 6pm</span></div></div>
+        <div class="col-lg-7"><form id="enquiryForm" class="enquiry-form needs-validation" novalidate>
+          <div class="row g-3"><div class="col-md-6"><label for="fullName" class="form-label">Your name</label><input type="text" class="form-control" id="fullName" name="name" placeholder="e.g. Alex Morgan" required><div class="invalid-feedback">Please enter your name.</div></div>
+            <div class="col-md-6"><label for="emailAddress" class="form-label">Email address</label><input type="email" class="form-control" id="emailAddress" name="email" placeholder="you@example.com" required><div class="invalid-feedback">Please enter a valid email address.</div></div>
+            <div class="col-12"><label for="destinationSelect" class="form-label">Where would you like to go?</label><select class="form-select" id="destinationSelect" name="destination" required><option value="" selected disabled>Choose a destination or tour</option><option>Santorini, Greece</option><option>Cinque Terre, Italy</option><option>Maasai Mara, Kenya</option><option>Mediterranean Dream</option><option>Into the Wild</option><option>Asia, Beyond the Ordinary</option><option>Somewhere else — surprise me</option></select><div class="invalid-feedback">Please choose an option.</div></div>
+            <div class="col-12"><label for="travelMessage" class="form-label">Tell us about your trip</label><textarea class="form-control" id="travelMessage" name="message" rows="4" placeholder="Travel dates, number of people, what you love doing..." required></textarea><div class="invalid-feedback">Please tell us a little about your plans.</div></div>
+            <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 mt-4"><button type="submit" class="btn btn-gold btn-lg">Send an enquiry <i class="bi bi-arrow-up-right ms-2"></i></button><small class="form-note"><i class="bi bi-lock me-1"></i> Your details stay private.</small></div>
+            <div class="col-12"><div id="formFeedback" class="alert alert-success d-none mb-0" role="status">Thanks for reaching out! This demo form is ready for a booking-service integration.</div></div>
+          </div>
+        </form></div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="row gy-4 align-items-center"><div class="col-lg-5"><a class="footer-brand" href="#home"><i class="bi bi-compass-fill"></i> Wanderlust <em>Journeys</em></a><p>Go further. Feel more. Come back with stories.</p></div><div class="col-lg-4"><div class="footer-links"><a href="#home">Home</a><a href="#destinations">Destinations</a><a href="#tours">Tours</a><a href="#contact">Contact</a></div></div><div class="col-lg-3"><div class="social-links"><a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="https://www.pinterest.com/" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></div></div></div><div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span id="currentYear">2026</span> Wanderlust Journeys. All rights reserved.</span><span>Designed for the curious, built for the journey.</span></div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
