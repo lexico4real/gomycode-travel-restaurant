@@ -4,7 +4,7 @@ A project hub containing two independent responsive website exercises built with
 
 ## Projects
 1. **The Golden Palette** — fictional restaurant website demonstrating Bootstrap's responsive grid system.
-2. **Wanderlust Journeys** — travel agency landing page demonstrating Bootstrap components. Its route is scaffolded and ready for the full implementation.
+2. **Wanderlust Journeys** — responsive travel agency landing page demonstrating Bootstrap components, cards, accordion and forms.
 
 ## Repository structure
 ```text
@@ -17,7 +17,10 @@ bootstrap-projects/
 │   ├── js/script.js
 │   └── assets/images/
 ├── travel-agency/
-│   └── index.html             # Travel project entry point
+│   ├── index.html             # Travel agency landing page
+│   ├── css/style.css          # Travel agency styles
+│   ├── js/script.js           # Navigation and form interactions
+│   └── README.md
 ├── README.md
 └── .gitignore
 ```
@@ -31,8 +34,15 @@ Open the root `index.html` in a browser and choose either project. No build step
 - Bootstrap modal with ingredient and allergen details
 - Light/dark theme toggle and contact form demo validation
 
-## Travel agency status
-The route is scaffolded in `travel-agency/index.html`. The full implementation will include a navbar, scenic hero, destination cards, tour accordion, contact form and footer.
+## Travel agency features
+- Responsive Bootstrap navbar with Home, Destinations, Tours and Contact links
+- Scenic hero with headline, supporting copy and calls to action
+- Three destination cards with images and enquiry links
+- Bootstrap accordion with three sample tour packages
+- Contact form with Bootstrap validation feedback and destination prefill
+- Responsive footer with social links
+
+The travel-agency contact form is a front-end demonstration; it does not send or store enquiries. The agency, destinations, contact details and tour packages are fictional sample content.
 
 ## Notes
 Restaurant prices and contact details are fictional. The restaurant contact form does not send or store submissions. Images are externally hosted.
